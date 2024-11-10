@@ -737,6 +737,12 @@
       i++;
     }
 
+    if (nextTwoCharacters === "  ") {  
+    html += "<br>";               // adds a <br> tag to insert a line break
+    i += 2;                        
+    continue;                     
+}
+
     // cleanup
     if (bolding) {
       html += "</strong>";
