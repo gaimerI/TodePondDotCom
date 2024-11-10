@@ -736,6 +736,10 @@
       html += character;
       i++;
     }
+    if (nextTwoCharacters === "  ") {
+        html += "<br>";
+        continue;
+      }
 
     // cleanup
     if (bolding) {
@@ -753,7 +757,7 @@
     if (blockquote) {
       html += "</blockquote>";
     }
-
+    
     return html;
   }
 
